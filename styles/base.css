@@ -75,6 +75,10 @@ main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    align-items: start;
 }
 
 h1 {
@@ -82,19 +86,8 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #1a252f;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Card Grid Layout */
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-    align-items: start;
-}
-
-main h1 {
     grid-column: 1 / -1;
 }
 
@@ -115,7 +108,7 @@ main h1 {
 .card h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #1a252f;
     margin-bottom: 1rem;
     border-bottom: 2px solid #667eea;
     padding-bottom: 0.5rem;
@@ -133,7 +126,7 @@ main h1 {
 
 .card p {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #1a252f;
     line-height: 1.7;
     font-size: 1rem;
 }
@@ -145,12 +138,32 @@ main h1 {
 
 .card li {
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: #1a252f;
     line-height: 1.6;
 }
 
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+    text-decoration: none;
+}
+
+.card a:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 .card strong {
-    color: #1a252f;
+    color: #0f172a;
     font-weight: 600;
 }
 
@@ -232,4 +245,3 @@ footer p:last-child {
         padding: 1rem;
     }
 }
-
