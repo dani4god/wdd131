@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="A responsive temple album with filtering capabilities showcasing beautiful temples from around the world">
+    <meta name="author" content="Okeke Daniel Ifeanyi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <nav>
+            <button id="menu-toggle" class="hamburger">☰</button>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link active" data-filter="all">Home</a></li>
+                <li><a href="#" class="nav-link" data-filter="old">Old</a></li>
+                <li><a href="#" class="nav-link" data-filter="new">New</a></li>
+                <li><a href="#" class="nav-link" data-filter="large">Large</a></li>
+                <li><a href="#" class="nav-link" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sacred Temples Around the World</h1>
+        <div class="temple-gallery" id="temple-gallery">
+            <!-- Temple cards will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Temple Album | Okeke Daniel Ifeanyi | Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

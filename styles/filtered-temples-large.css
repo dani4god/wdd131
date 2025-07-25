@@ -4,17 +4,17 @@
     header {
         padding: 1.5rem 2rem;
     }
-    
+   
     header h2 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
-    
+   
     /* Navigation for larger screens */
     .hamburger {
         display: none;
     }
-    
+   
     .nav-list {
         display: flex;
         position: static;
@@ -25,11 +25,11 @@
         justify-content: center;
         gap: 2rem;
     }
-    
+   
     .nav-list li {
         margin: 0;
     }
-    
+   
     .nav-link {
         padding: 0.8rem 1.5rem;
         border-radius: 25px;
@@ -38,8 +38,9 @@
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        border-left: none;
     }
-    
+   
     .nav-link::before {
         content: '';
         position: absolute;
@@ -50,58 +51,54 @@
         background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
         transition: left 0.5s ease;
     }
-    
+   
     .nav-link:hover::before {
         left: 100%;
     }
-    
-    .nav-link:hover {
+   
+    .nav-link:hover, .nav-link.active {
         background-color: rgba(255,255,255,0.1);
         border-color: rgba(255,255,255,0.3);
         transform: translateY(-2px);
         box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        padding-left: 1.5rem;
     }
-    
+   
     /* Main content adjustments */
     main {
         padding: 3rem 2rem;
         max-width: 1200px;
     }
-    
+   
     main h1 {
         font-size: 3rem;
         margin-bottom: 3rem;
     }
-    
+   
     /* Temple gallery grid for larger screens */
     .temple-gallery {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2.5rem;
     }
-    
-    figure {
+   
+    .temple-card {
         transition: all 0.4s ease;
     }
-    
-    figure:hover {
+   
+    .temple-card:hover {
         transform: translateY(-10px) scale(1.02);
         box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     }
-    
-    figure img {
+   
+    .temple-card img {
         height: 300px;
     }
-    
-    figcaption {
-        font-size: 1.2rem;
-        padding: 1.5rem;
-    }
-    
+   
     /* Footer adjustments */
     footer {
         padding: 3rem 2rem;
     }
-    
+   
     footer p {
         font-size: 1rem;
     }
@@ -113,15 +110,15 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
     }
-    
-    figure img {
+   
+    .temple-card img {
         height: 350px;
     }
-    
+   
     main h1 {
         font-size: 3.5rem;
     }
-    
+   
     header h2 {
         font-size: 3rem;
     }
