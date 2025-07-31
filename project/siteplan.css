@@ -1,0 +1,225 @@
+/* Docchy Laboratories Site Plan Styles */
+
+/* Color Schema Implementation */
+:root {
+    --primary-blue: #1e3a8a;
+    --accent-cyan: #06b6d4;
+    --neutral-gray: #64748b;
+    --light-background: #f8fafc;
+    --white: #ffffff;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--neutral-gray);
+    background-color: var(--light-background);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-cyan);
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+/* Layout Components */
+section {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.logo-container {
+    display: inline-block;
+    background: var(--white);
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    letter-spacing: 2px;
+}
+
+/* Color Palette Display */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.color-primary { 
+    background-color: var(--primary-blue); 
+}
+
+.color-accent { 
+    background-color: var(--accent-cyan); 
+}
+
+.color-neutral { 
+    background-color: var(--neutral-gray); 
+}
+
+.color-light { 
+    background-color: var(--light-background); 
+    color: var(--neutral-gray); 
+    border: 2px solid var(--neutral-gray); 
+}
+
+/* Typography Samples */
+.typography-sample {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--light-background);
+    border-left: 4px solid var(--accent-cyan);
+    border-radius: 4px;
+}
+
+.font-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.font-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--neutral-gray);
+}
+
+/* Wireframe Styles */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.wireframe {
+    border: 2px solid var(--neutral-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.wireframe h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.wireframe-box {
+    border: 1px dashed var(--accent-cyan);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: var(--light-background);
+    font-size: 0.9rem;
+    color: var(--neutral-gray);
+}
+
+/* Scenario Styles */
+.scenario {
+    background: var(--light-background);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary-blue);
+    border-radius: 4px;
+}
+
+.scenario h4 {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* List Styles */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--primary-blue);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+}
