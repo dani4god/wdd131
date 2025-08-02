@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted - Thank You!</title>
+    <meta name="description" content="Thank you for submitting your product review">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+        <p>Your review has been successfully submitted</p>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <div class="success-icon">✓</div>
+            
+            <div class="review-summary">
+                <h2>Review Summary</h2>
+                
+                <div class="summary-item">
+                    <strong>Product:</strong>
+                    <span id="productName">-</span>
+                </div>
+                
+                <div class="summary-item">
+                    <strong>Rating:</strong>
+                    <span id="rating" class="rating-display">-</span>
+                </div>
+                
+                <div class="summary-item">
+                    <strong>Installation Date:</strong>
+                    <span id="installDate">-</span>
+                </div>
+                
+                <div class="summary-item">
+                    <strong>Useful Features:</strong>
+                    <span id="features">-</span>
+                </div>
+                
+                <div class="summary-item" id="reviewTextSection" style="display: none;">
+                    <strong>Your Review:</strong>
+                    <div id="writtenReview" class="review-text">-</div>
+                </div>
+                
+                <div class="summary-item" id="userNameSection" style="display: none;">
+                    <strong>Reviewer:</strong>
+                    <span id="userName">-</span>
+                </div>
+                
+                <div class="summary-item">
+                    <strong>Submitted:</strong>
+                    <span id="submissionTime">-</span>
+                </div>
+            </div>
+            
+            <div class="counter-section">
+                <h3>Review Statistics</h3>
+                <p>Total reviews submitted from this browser: <strong id="reviewCounter">0</strong></p>
+            </div>
+            
+            <div class="action-buttons">
+                <button onclick="window.history.back()" class="back-btn">Submit Another Review</button>
+                <button onclick="window.location.href='form.html'" class="new-review-btn">New Review</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Product Reviews | All rights reserved</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/review.js"></script>
+</body>
+</html>
