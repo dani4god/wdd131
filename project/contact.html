@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Docchy Laboratories</title>
+    <meta name="description" content="Contact Docchy Laboratories for inquiries about our scientific research, laboratory services, and collaboration opportunities.">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">DOCCHY LAB</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="contact.html" class="cta-button">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Reach out to our team for inquiries about laboratory services, research collaborations, or educational resources. We're here to assist you with your scientific needs.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="contact-illustration">
+                    <div class="envelope"></div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">Fill out the form below, and our team will respond within 24-48 hours.</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" aria-describedby="phone-error">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-type">Inquiry Type <span class="required">*</span></label>
+                    <select id="inquiry-type" name="inquiry-type" required aria-describedby="inquiry-type-error">
+                        <option value="">Select an option</option>
+                        <option value="services">Laboratory Services</option>
+                        <option value="research">Research Collaboration</option>
+                        <option value="education">Educational Resources</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="inquiry-type-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="form-submit">Submit Inquiry</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <h3 class="info-title">Visit Us</h3>
+                    <p>123 Laboratory Ave<br>Science City, SC 12345</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <h3 class="info-title">Call Us</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <h3 class="info-title">Email Us</h3>
+                    <p><a href="mailto:info@docchy-labs.com">info@docchy-labs.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Docchy Laboratories</h3>
+                    <p class="footer-desc">Advanced scientific research and analytical testing services for environmental, industrial, and research applications.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#water-analysis">Water Analysis</a></li>
+                        <li><a href="services.html#soil-analysis">Soil Testing</a></li>
+                        <li><a href="services.html#toxicology">Toxicology</a></li>
+                        <li><a href="services.html#consultancy">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="quality.html">Quality Standards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact">
+                        <p>📍 123 Laboratory Ave<br>Science City, SC 12345</p>
+                        <p>📞 <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                        <p>✉️ <a href="mailto:info@docchy-labs.com">info@docchy-labs.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Docchy Laboratories. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

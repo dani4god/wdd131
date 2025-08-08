@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Services - Docchy Laboratories</title>
+    <meta name="description" content="Comprehensive laboratory services including water analysis, soil testing, toxicology, and specialized chemical analysis at Docchy Laboratories.">
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">DOCCHY LAB</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="contact.html" class="cta-button">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Laboratory Services</h1>
+                <p class="hero-subtitle">Advanced analytical testing and scientific consulting services powered by state-of-the-art equipment and expert analysis</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">14+</span>
+                        <span class="stat-label">Specialized Services</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">ISO</span>
+                        <span class="stat-label">Certified Lab</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24-72h</span>
+                        <span class="stat-label">Turnaround Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="lab-illustration">
+                    <div class="beaker beaker-1"></div>
+                    <div class="beaker beaker-2"></div>
+                    <div class="beaker beaker-3"></div>
+                    <div class="molecules">
+                        <span class="molecule"></span>
+                        <span class="molecule"></span>
+                        <span class="molecule"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Analytical Services</h2>
+                <p class="section-subtitle">Comprehensive laboratory testing solutions for environmental, industrial, and research applications</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Environmental Analysis -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon env-icon">🌊</div>
+                        <h3 class="category-title">Environmental Analysis</h3>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item" data-service="water-analysis">
+                            <div class="service-icon">💧</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Water Analysis</h4>
+                                <p class="service-desc">Comprehensive testing for drinking water, wastewater, and surface water quality parameters</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand water analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="soil-analysis">
+                            <div class="service-icon">🌱</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Soil Analysis</h4>
+                                <p class="service-desc">Soil composition, fertility, contamination, and agricultural suitability testing</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand soil analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="heavy-metals">
+                            <div class="service-icon">⚗️</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Heavy Metal Analysis</h4>
+                                <p class="service-desc">Detection and quantification of toxic heavy metals in various sample matrices</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand heavy metal analysis details">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chemical Analysis -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon chem-icon">🧪</div>
+                        <h3 class="category-title">Chemical Analysis</h3>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item" data-service="fatty-acid">
+                            <div class="service-icon">🔬</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Fatty Acid Profile</h4>
+                                <p class="service-desc">Complete fatty acid composition analysis for food, pharmaceutical, and research applications</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand fatty acid analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="antioxidant">
+                            <div class="service-icon">🛡️</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Antioxidant Analysis</h4>
+                                <p class="service-desc">Quantification of antioxidant capacity and individual antioxidant compounds</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand antioxidant analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="ftir">
+                            <div class="service-icon">📊</div>
+                            <div class="service-info">
+                                <h4 class="service-name">FTIR Analysis</h4>
+                                <p class="service-desc">Fourier Transform Infrared spectroscopy for molecular structure identification</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand FTIR analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="phytochemistry">
+                            <div class="service-icon">🌿</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Phytochemistry</h4>
+                                <p class="service-desc">Analysis of plant secondary metabolites, bioactive compounds, and natural products</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand phytochemistry details">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialized Testing -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon spec-icon">🔍</div>
+                        <h3 class="category-title">Specialized Testing</h3>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item" data-service="toxicology">
+                            <div class="service-icon">☣️</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Toxicology</h4>
+                                <p class="service-desc">Safety assessment, toxicity testing, and risk evaluation services</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand toxicology details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="proximate">
+                            <div class="service-icon">📈</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Proximate Analysis</h4>
+                                <p class="service-desc">Determination of moisture, ash, protein, fat, and carbohydrate content</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand proximate analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="pah">
+                            <div class="service-icon">🔥</div>
+                            <div class="service-info">
+                                <h4 class="service-name">PAH Analysis</h4>
+                                <p class="service-desc">Polycyclic Aromatic Hydrocarbon detection in environmental and food samples</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand PAH analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="tph">
+                            <div class="service-icon">🛢️</div>
+                            <div class="service-info">
+                                <h4 class="service-name">TPH Analysis</h4>
+                                <p class="service-desc">Total Petroleum Hydrocarbon analysis for environmental contamination assessment</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand TPH analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="nanoparticles">
+                            <div class="service-icon">⚛️</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Nanoparticle Analysis</h4>
+                                <p class="service-desc">Characterization of nanoparticle size, morphology, and surface properties</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand nanoparticle analysis details">+</button>
+                        </div>
+                        
+                        <div class="service-item" data-service="anti-inflammatory">
+                            <div class="service-icon">🩺</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Anti-inflammatory Analysis</h4>
+                                <p class="service-desc">Assessment of anti-inflammatory properties and biomarker analysis</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand anti-inflammatory analysis details">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consulting Services -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon consult-icon">👥</div>
+                        <h3 class="category-title">Consulting Services</h3>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item" data-service="consultancy">
+                            <div class="service-icon">💼</div>
+                            <div class="service-info">
+                                <h4 class="service-name">Expert Consultancy</h4>
+                                <p class="service-desc">Technical consultation, method development, and regulatory compliance support</p>
+                            </div>
+                            <button class="service-expand" aria-label="Expand consultancy details">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Testing Process</h2>
+                <p class="section-subtitle">Streamlined workflow ensuring accurate results and timely delivery</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Sample Collection</h3>
+                        <p class="step-desc">Professional sample collection or detailed guidelines for client sampling</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Laboratory Analysis</h3>
+                        <p class="step-desc">Advanced analytical techniques using state-of-the-art instrumentation</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Quality Assurance</h3>
+                        <p class="step-desc">Rigorous QC protocols and validation procedures ensure result accuracy</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Report Delivery</h3>
+                        <p class="step-desc">Comprehensive reports with interpretation and recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Contact our experts to discuss your analytical testing needs and receive a customized quote</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-primary">Request Quote</a>
+                    <a href="tel:+1234567890" class="cta-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Docchy Laboratories</h3>
+                    <p class="footer-desc">Advanced scientific research and analytical testing services for environmental, industrial, and research applications.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Email">📧</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#water-analysis">Water Analysis</a></li>
+                        <li><a href="#soil-analysis">Soil Testing</a></li>
+                        <li><a href="#toxicology">Toxicology</a></li>
+                        <li><a href="#consultancy">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="quality.html">Quality Standards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact">
+                        <p>📍 123 Laboratory Ave<br>Science City, SC 12345</p>
+                        <p>📞 +1 (234) 567-8900</p>
+                        <p>✉️ info@docchy-labs.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Docchy Laboratories. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>
