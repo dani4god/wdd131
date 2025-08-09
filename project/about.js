@@ -17,6 +17,7 @@ class AboutPageController {
                 this.setupIntersectionObserver();
                 this.initCounterAnimations();
                 this.setupParallaxEffects();
+                this.initializeHamburgerMenu();
             });
         } else {
             this.setupEventListeners();
@@ -24,6 +25,7 @@ class AboutPageController {
             this.setupIntersectionObserver();
             this.initCounterAnimations();
             this.setupParallaxEffects();
+            this.initializeHamburgerMenu();
         }
     }
 
@@ -414,4 +416,50 @@ document.addEventListener('DOMContentLoaded', () => {
 // Export for potential use in other modules
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = AboutPageController;
+}
+
+
+/**
+ * Initialize hamburger menu functionality
+ */
+function initializeHamburgerMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.querySelector('.nav-list');
+   
+    if (menuToggle && navList) {
+        menuToggle.addEventListener('click', function() {
+            // Toggle the menu visibility
+            navList.classList.toggle('open');
+           
+            // Change hamburger icon to X and vice versa
+            if (navList.classList.contains('open')) {
+                menuToggle.innerHTML = '✕';
+                menuToggle.setAttribute('aria-label', 'Close menu');
+            } else {
+                menuToggle.innerHTML = '☰';
+                menuToggle.setAttribute('aria-label', 'Open menu');
+            }
+        });
+       
+        // Close menu when clicking on a nav link (mobile)
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 768) {
+                    navList.classList.remove('open');
+                    menuToggle.innerHTML = '☰';
+                    menuToggle.setAttribute('aria-label', 'Open menu');
+                }
+            });
+        });
+       
+        // Close menu when window is resized to larger view
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) {
+                navList.classList.remove('open');
+                menuToggle.innerHTML = '☰';
+                menuToggle.setAttribute('aria-label', 'Open menu');
+            }
+        });
+    }
 }

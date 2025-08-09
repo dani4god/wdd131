@@ -191,6 +191,7 @@ p {
     flex-direction: column;
     justify-content: space-around;
     width: 28px;
+    margin: 0 auto;
     height: 28px;
     background: transparent;
     border: none;
